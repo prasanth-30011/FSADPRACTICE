@@ -1,0 +1,23 @@
+### 2. Add this content to `.gitignore`:
+```
+# Eclipse metadata (IDE-specific files)
+.metadata/
+.settings/
+.classpath
+.project
+
+# Build outputs
+bin/
+target/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+*.swp
+*.swo
+*~
+.idea/
+*.iml
