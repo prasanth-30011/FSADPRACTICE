@@ -1,0 +1,13 @@
+package com.klu.demo;
+import org.springframework.context.*;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+public class MainApp {
+	public static void main(String[] args) {
+		ApplicationContext context =new ClassPathXmlApplicationContext("ApplicationContext.xml");
+		Car car=(Car)context.getBean("car");
+		car.drive();
+		
+		Bike bike = (Bike)context.getBean("bike");
+		bike.ride();
+	}
+}
